@@ -1,0 +1,460 @@
+/* Extra Small Devices (Phones, <576px) */
+@media (max-width: 767.98px) {
+
+
+
+    h1 {
+        font-size: 43;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .heading-texts {
+        margin: 40px 0;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .service-heading p {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* section {
+        margin: 40px;
+    } */
+
+    header {
+        height: auto;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+
+
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        color: #000;
+        cursor: pointer;
+        z-index: 1111;
+        position: absolute;
+        right: 40px;
+        top: 60px;
+    }
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+
+    .nav-center {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 111;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-center ul {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+    .hero-section {
+        flex-direction: column;
+        position: relative;
+        padding-top: 80px;
+    }
+
+    .hero-text h1 {
+        margin-bottom: 280px;
+    }
+
+    .hero-text p {
+        padding-right: 0;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .hero-button {
+        margin: 20px 0;
+        padding: 15px 35px;
+        width: 100%;
+    }
+
+    .hero-image {
+        position: absolute;
+        top: 385px;
+    }
+
+    .hero-image img {
+        width: 90%;
+
+    }
+
+    .hero-text p {
+        width: 100%;
+    }
+
+    .logo-types {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo-types img {
+        width: 20%;
+        flex: none;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 15px;
+        border-radius: 25px;
+
+    }
+
+    .card-image {
+        margin: 0;
+    }
+
+    .card-text h3 {
+        font-size: 24px;
+    }
+
+    #cta {
+        margin: 0;
+    }
+
+    #case-studies {
+        margin: 50px;
+    }
+
+    .case-studies-heading p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .case-studies-boxes {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .case-studies-boxes {
+        background-color: #fff;
+    }
+
+    .case-studies-box {
+        background-color: #191A23;
+        border-radius: 45px;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cta-image {
+        display: none;
+    }
+
+    .active {
+        display: none;
+    }
+
+    .procesion-block-card {
+        padding: 15px 16px;
+    }
+
+    .procesion-block-card-text h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .procesion-block-card-text p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /* Reduce font size of additional info */
+    .additional-info {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Image adjustments */
+    .procesion-block-card-img img {
+        width: 20px;
+        /* Adjust size as needed */
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    #team {
+        margin-bottom: 100px;
+    }
+
+    .team-button {
+        width: 100%;
+        position: static;
+    }
+
+    .testimonial-heading p {
+        width: 100%;
+
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        /* Full width */
+    }
+
+    .testimonial-card {
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+        /* Adjusted font size for mobile */
+    }
+
+    .author-info h4 {
+        font-size: 18px;
+        /* Slightly smaller font */
+        margin-top: 10px;
+    }
+
+    .author-info p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    /* Adjust navigation icons and spacing */
+    .card-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .card-navigation img {
+        width: 15px;
+        /* Smaller icon size */
+    }
+
+    .card-navigation i {
+        font-size: 18px;
+        /* Adjust arrow size */
+        cursor: pointer;
+    }
+
+    .contact-us-img {
+        display: none;
+    }
+
+    .contact-us {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .radio-buttons {
+        justify-content: center;
+    }
+
+    .contact-us-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-contact-us {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-subscription {
+        background-color: #292A32;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+
+    .footer-subscription input[type="email"],
+    .footer-subscription .subcription {
+        width: 100%;
+        /* Make both input and button full width */
+        padding: 15px;
+        font-size: 16px;
+        box-sizing: border-box;
+        /* Ensures padding is included in width */
+        margin: 0;
+    }
+
+    .social-icons {
+        position: absolute;
+        bottom: 230px;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .copy-right {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .hero-image img {
+        width: 80%;
+    }
+
+    .hero-image {
+        position: absolute;
+        top: 240px;
+    }
+
+    .hero-text h1 {
+        margin-bottom: 400px;
+    }
+}
+
+/* Medium Devices (Small Laptops, ≥768px) */
+
+
+
+/* Large Devices (Laptops/Desktops, ≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        overflow: hidden;
+
+    }
+
+    .hambruger-menu {
+        display: block;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-button {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .logo-types {
+        width: 100%;
+        gap: 20px;
+    }
+
+    #services {
+        padding: 20px;
+    }
+
+    section,
+    #footer {
+        padding: 20px;
+    }
+
+    .cta-box,
+    .testimonial {
+        height: auto;
+    }
+
+    .case-studies-box {
+        height: 330px;
+    }
+
+    /* styles for screens between 992px and 1199.98px */
+}
+
+/* Extra Large Devices (Large Desktops, ≥1200px) */
+@media (min-width: 1200px) {
+    /* styles for screens larger than 1200px */
+}
