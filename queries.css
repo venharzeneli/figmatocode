@@ -119,6 +119,8 @@
         width: 100%;
     }
 
+
+
     .hero-image {
         position: absolute;
         top: 385px;
@@ -164,6 +166,31 @@
 
     #cta {
         margin: 0;
+    }
+
+    .case-studies-slider {
+        position: relative;
+        overflow: hidden;
+        /* Hide horizontal scroll */
+        width: 100%;
+        touch-action: pan-x;
+        /* Improve touch responsiveness */
+    }
+
+    .case-studies-boxes {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        /* Smooth sliding effect */
+        will-change: transform;
+
+    }
+
+    .case-studies-box {
+        min-width: 100%;
+        /* Each box takes up full width */
+        flex-shrink: 0;
+        /* Prevent shrinking */
+        padding: 30px;
     }
 
     #case-studies {
@@ -361,6 +388,7 @@
     .social-icons {
         position: absolute;
         bottom: 230px;
+        margin-bottom: 30px;
     }
 
     .footer-links ul {
