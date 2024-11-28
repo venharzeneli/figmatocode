@@ -141,6 +141,11 @@ nav ul li {
     line-height: 28px;
 }
 
+nav ul li:hover {
+    color: #2D2D2D;
+    font-size: 25px;
+    transition: 0.5s linear;
+}
 
 
 .nav-button {
@@ -441,8 +446,6 @@ button:hover {
 /* procesion block */
 
 
-.procesion-block-text {}
-
 .procesion-block-text h2 {
     color: #0D0C22;
     background-color: #B9FF66;
@@ -454,21 +457,29 @@ button:hover {
     width: 350px;
 }
 
+/* Styling for each card container */
 .procesion-block-card {
     background-color: #F3F3F3;
     padding: 40px 60px;
     border-radius: 45px;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(25, 26, 35, 0.5);
-    /* x = 0, y = 5px, blur = 10px, rgba for color */
+    transition: background-color 0.3s ease;
 }
 
+.procesion-block-card img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Flexbox to align card content properly */
 .card-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Styling for card text, where the number and title are */
 .procesion-block-card-text {
     display: flex;
     align-items: center;
@@ -484,24 +495,43 @@ button:hover {
     font-size: 30px;
 }
 
-.procesion-block-card.active {
+/* Highlight the additional-info section when active */
+input[type="radio"]:checked+.card-wrapper+.additional-info {
+    display: block;
     background-color: #B9FF66;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
 }
 
+/* Styling for the divider between the card content */
 .procesion-block-card hr {
     margin: 30px 0;
 }
 
+/* Additional information text style */
 .additional-info {
     color: #000000;
     font-weight: 300;
     font-size: 18px;
+    display: none;
+    transition: max-height 0.3s ease-in-out;
 }
 
+/* Hide the radio buttons but keep them functional */
+input[type="radio"] {
+    display: none;
+}
+
+/* Change the plus to minus when the radio button is checked */
+input[type="radio"]:checked+.card-wrapper .procesion-block-card-img label img {
+    content: url('img/minus.png');
+}
+
+/* Add some pointer effect to the clickable image */
 .procesion-block-card-img {
     cursor: pointer;
 }
-
 
 /* TEAM SECTION */
 #team {
@@ -683,6 +713,9 @@ button:hover {
     cursor: pointer;
 }
 
+.card-navigation img:hover {
+    cursor: pointer;
+}
 
 
 /* CONTACT */
