@@ -201,6 +201,11 @@ nav ul li {
     margin-top: 10px;
 }
 
+button:hover {
+    background-color: #1b184e;
+    transition: 0.33s linear;
+}
+
 .logo-types {
     padding: 20px;
     display: flex;
@@ -753,6 +758,29 @@ form input {
     margin-bottom: 25px;
 }
 
+form input:invalid:not(:placeholder-shown) {
+    border-color: red;
+    background-image: url(img/checked_red.png);
+
+}
+
+form input:invalid,
+form input:valid {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px)
+}
+
+form input:valid {
+    border-color: none;
+    background-image: url(img/checked_green.png);
+}
+
+form input:invalid~button[type="submit"] {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
 .message {
     padding: 20px 45px;
     background-color: #0D0C22;
@@ -797,6 +825,11 @@ footer {
     padding: 10px;
 }
 
+.social-icons i:hover {
+    color: #75788f;
+    transition: 0.33s linear;
+}
+
 
 .footer-contact-us {
     display: flex;
@@ -826,6 +859,17 @@ footer {
     justify-content: center;
     border-radius: 14px;
     margin-left: 154px;
+}
+
+.footer-subscription input[type="email"] {
+    color: black;
+
+}
+
+
+
+.subcription:hover {
+    background-color: #F3F3F3;
 }
 
 .footer-subscription input {
