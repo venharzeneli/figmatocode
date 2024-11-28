@@ -67,3 +67,36 @@ slider.addEventListener('touchend', () => {
         isDragging = false;
     }
 });
+// Get all the images inside the cards
+const images = document.querySelectorAll('.procesion-block-card-img img');
+
+// Loop through all images and add click event listeners
+images.forEach(image => {
+    image.addEventListener('click', (e) => {
+        // Get the parent card of the clicked image
+        const card = e.target.closest('.procesion-block-card');
+        
+        // Toggle the active card class
+        card.classList.toggle('active-card');
+        
+        // If the card has the 'active-card' class, show the additional info
+        const additionalInfo = card.querySelector('.additional-info');
+        if (card.classList.contains('active-card')) {
+            additionalInfo.style.display = 'block';  // Show the additional info
+        } else {
+            additionalInfo.style.display = 'none';   // Hide the additional info
+        }
+
+        // Close other cards by removing their 'active-card' class
+        const otherCards = document.querySelectorAll('.procesion-block-card');
+        otherCards.forEach(otherCard => {
+            if (otherCard !== card) {
+                otherCard.classList.remove('active-card');
+                const otherAdditionalInfo = otherCard.querySelector('.additional-info');
+                if (otherAdditionalInfo) {
+                    otherAdditionalInfo.style.display = 'none'; // Hide additional info of other cards
+                }
+            }
+        });
+    });
+});
