@@ -15,3 +15,8 @@ This is a fully responsive website designed and developed based on a Figma desig
 - **HTML5**: Markup structure.
 - **CSS3**: Styling and layout design.
 - **JavaScript**: Dynamic and interactive functionality.
+
+
+https://venharzeneli.github.io/figmatocode/   
+
+This is the link to the project.
